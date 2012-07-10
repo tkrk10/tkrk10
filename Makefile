@@ -12,9 +12,6 @@ init:
 clean-all-gems:
 	sudo gem list --local | cut -d" " -f1 | sudo xargs gem uninstall
 
-start-sinatra:
-	rbenv exec ruby -rubygems $(ROOT_RUBY_FILE)
-
 start-local:
 	bundle exec rackup $(ROOT_RUBY_FILE)
 
