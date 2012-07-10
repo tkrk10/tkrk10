@@ -13,4 +13,6 @@ require 'pry-stack_explorer'
 enable :sessions, :logging
 
 get '/' do
+  # haml :index, :format => :html5
+  File.read(File.join('public', 'html', 'index.html'))
 end

@@ -100,7 +100,6 @@ DEPENDENCIES
   capistrano
   capistrano-ext
   capistrano_colors
-  daemons
   haml
   hirb
   hirb-unicode
