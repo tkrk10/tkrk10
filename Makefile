@@ -1,4 +1,4 @@
-APP_NAME  = tkrk10ab
+APP_NAME  = tkrk10
 INSTANCE_COUNT = 1
 ROOT_RUBY_FILE = config.ru
 
