@@ -32,3 +32,6 @@ gem 'pit'
 gem 'addressable'
 
 gem 'thin'
+
+gem 'heroku'
+gem 'foreman'
