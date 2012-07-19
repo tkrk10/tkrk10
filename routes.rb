@@ -16,6 +16,13 @@ get '/' do
 end
 
 get '/program.html' do
-  p 'hoge'
   File.read(File.join('public', 'html', 'program.html'))
+end
+
+get '/register.html' do
+  File.read(File.join('public', 'html', 'register.html'))
+end
+
+get '/sponsor.html' do
+  File.read(File.join('public', 'html', 'sponsor.html'))
 end
