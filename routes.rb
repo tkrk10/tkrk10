@@ -26,3 +26,7 @@ end
 get '/sponsor.html' do
   File.read(File.join('public', 'html', 'sponsor.html'))
 end
+
+get '/favicon.ico' do
+  File.read(File.join('public', 'img', 'favicon.ico'))
+end
