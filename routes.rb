@@ -16,15 +16,17 @@ get '/' do
 end
 
 get '/program.html' do
-  File.read(File.join('public', 'html', 'program.html'))
+  File.read(File.join('public', 'html', 'underConstraction.html'))
 end
 
 get '/register.html' do
-  File.read(File.join('public', 'html', 'register.html'))
+  # File.read(File.join('public', 'html', 'register.html'))
+  File.read(File.join('public', 'html', 'underConstraction.html'))
 end
 
 get '/sponsor.html' do
-  File.read(File.join('public', 'html', 'sponsor.html'))
+  # File.read(File.join('public', 'html', 'sponsor.html'))
+  File.read(File.join('public', 'html', 'underConstraction.html'))
 end
 
 get '/favicon.ico' do
