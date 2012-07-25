@@ -15,6 +15,10 @@ get '/' do
   File.read(File.join('public', 'html', 'index.html'))
 end
 
+get '/en' do
+  File.read(File.join('public', 'html', 'en', 'index.html'))
+end
+
 get '/program.html' do
   File.read(File.join('public', 'html', 'underConstraction.html'))
 end
