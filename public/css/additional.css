@@ -1,3 +1,44 @@
 section + section {
-  padding-top: 50px;
+  padding-top: 10px;
+}
+
+body {
+  position: relative;
+  padding-top: 40px;
+}
+
+.bigtitle {
+  position: relative;
+  padding:40px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: #000035; /* Old browsers */
+}
+.bigtitle h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1;
+}
+.bigtitle p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+/* Subhead (other pages)
+------------------------- */
+.subhead {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.subhead h1 {
+  font-size: 60px;
+}
+.subhead p {
+  margin-bottom: 20px;
+}
+.subhead .navbar {
+  display: none;
 }
