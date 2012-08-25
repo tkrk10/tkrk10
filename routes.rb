@@ -10,6 +10,8 @@ require 'pry-nav'
 require 'pry-exception_explorer'
 require 'pry-stack_explorer'
 
+set :public_folder, File.dirname(__FILE__) + '/static'
+
 get '/' do
   # haml :index, :format => :html5
   File.read(File.join('public', 'html', 'index.html'))
@@ -30,7 +32,7 @@ end
 
 get '/sponsor.html' do
   # File.read(File.join('public', 'html', 'sponsor.html'))
-  File.read(File.join('public', 'html', 'underConstraction.html'))
+  File.read(File.join('public', 'html', 'sponsor.html'))
 end
 
 get '/favicon.ico' do
