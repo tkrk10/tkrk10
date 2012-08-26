@@ -14,27 +14,27 @@ set :public_folder, File.dirname(__FILE__) + '/static'
 
 get '/' do
   # haml :index, :format => :html5
-  File.read(File.join('public', 'html', 'index.html'))
+  File.read(File.join('static', 'html', 'index.html'))
 end
 
 get '/en/' do
-  File.read(File.join('public', 'html', 'en', 'index.html'))
+  File.read(File.join('static', 'html', 'en', 'index.html'))
 end
 
 get '/program.html' do
-  File.read(File.join('public', 'html', 'underConstraction.html'))
+  File.read(File.join('static', 'html', 'underConstraction.html'))
 end
 
 get '/register.html' do
-  # File.read(File.join('public', 'html', 'register.html'))
-  File.read(File.join('public', 'html', 'underConstraction.html'))
+  # File.read(File.join('static', 'html', 'register.html'))
+  File.read(File.join('static', 'html', 'underConstraction.html'))
 end
 
 get '/sponsor.html' do
-  # File.read(File.join('public', 'html', 'sponsor.html'))
-  File.read(File.join('public', 'html', 'sponsor.html'))
+  # File.read(File.join('static', 'html', 'sponsor.html'))
+  File.read(File.join('static', 'html', 'sponsor.html'))
 end
 
 get '/favicon.ico' do
-  File.read(File.join('public', 'img', 'favicon.ico'))
+  File.read(File.join('static', 'img', 'favicon.ico'))
 end
