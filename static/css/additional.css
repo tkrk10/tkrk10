@@ -42,3 +42,6 @@ body {
 .subhead .navbar {
   display: none;
 }
+.brand a {
+  color : gray;
+}
