@@ -45,3 +45,7 @@ body {
 .brand a {
   color : gray;
 }
+
+#gold-sponsors > div + div {
+  margin-top: 10px;
+}
