@@ -17,7 +17,7 @@ get '/' do
   File.read(File.join('static', 'html', 'index.html'))
 end
 
-get '/en/' do
+get '/en' do
   File.read(File.join('static', 'html', 'en', 'index.html'))
 end
 
