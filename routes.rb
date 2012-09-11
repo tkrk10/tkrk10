@@ -31,8 +31,11 @@ get '/register.html' do
 end
 
 get '/sponsor.html' do
-  # File.read(File.join('static', 'html', 'sponsor.html'))
   File.read(File.join('static', 'html', 'sponsor.html'))
+end
+
+get '/community' do
+  File.read(File.join('static', 'html', 'community', 'index.html'))
 end
 
 get '/favicon.ico' do
