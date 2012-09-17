@@ -38,26 +38,6 @@ get '/community' do
   File.read(File.join('static', 'html', 'community', 'index.html'))
 end
 
-get '/community/shibuya_rb.html' do
-  File.read(File.join('static', 'html', 'community', 'shibuya_rb.html'))
-end
-
-get '/community/shinjuku_rb.html' do
-  File.read(File.join('static', 'html', 'community', 'shinjuku_rb.html'))
-end
-
-get '/community/tokyu_rb.html' do
-  File.read(File.join('static', 'html', 'community', 'tokyu_rb.html'))
-end
-
-get '/community/minami_rb.html' do
-  File.read(File.join('static', 'html', 'community', 'minami_rb.html'))
-end
-
-get '/community/rubykaja.html' do
-  File.read(File.join('static', 'html', 'community', 'rubykaja.html'))
-end
-
 get '/favicon.ico' do
   File.read(File.join('static', 'img', 'favicon.ico'))
 end
