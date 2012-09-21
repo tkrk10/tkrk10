@@ -1,0 +1,36 @@
+name: Yokohama.rb
+description: |
+  <dl>
+    <dt>Yokohama.rb とは</dt>
+    <dd>
+      毎月1回、横浜周辺のRuby技術者が集まってRubyに関する何かをする<br>コミュニティです。<br>定例として「Rubyレシピブック」の読書会をやってますが<br>各自思い思いのことをもくもくとやっています。<br>定期的に初参加の方が来られ、また、懇親会の参加率が<br>8割を超えるRubyコミュニティでもあります。<br>
+    </dd>
+    <br>
+    <dt>主な開催場所</dt>
+    <dd>横浜市神奈川地区センター（和室）</dd>
+    <br>
+    <dt>ハッシュタグ</dt>
+    <dd>#yokohamarb</dd>
+    <br>
+    <dt>中心的な運営メンバー</dt>
+    <dd>@dan5ya , @yokohamarb</dd>
+  </dl>
+description_en: |
+  <dl>
+    <dt>What's Yokohama.rb</dt>
+    <dd>
+    Yokohama.rb is a regional Rubyist group for developers living in and around Yokohama, Japan.<br>While there is no fixed plan for how we will continue and grow, currently we usually approach our meetups as follows:
+    <ul><li>Meet once per month (Usually the second Saturday of each month)</li>
+        <li>We do not assign specific activities, but we are usually studying some part of the Ruby programming language.</li>
+        <li>After our meetup, we usually go out for dinner and drinks.</li></ul>
+    </dd>
+    <br>
+    <dt>Location</dt>
+    <dd>Yokohama District Center (Tatami Room)</dd>
+    <br>
+    <dt>Hashtag</dt>
+    <dd>#yokohamarb</dd>
+    <br>
+    <dt>Management Member</dt>
+    <dd>@dan5ya , @yokohamarb</dd>
+  </dl>
