@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row-fluid">
+    <!-- main span -->
+      <h1>Tokyo Ruby Kaigi 10 Communities</h1>
+      <br>
+      <br>
+      <h2>Participating Communities</h2>
+      <ul>
+        <% @communities.each do |c| %>
+          <li><a data-toggle="modal" href='#<%= c.id %>'><%= c.name %></a></li>
+        <% end %>
+      </ul>
+
+      <br>
+      <br>
+      <h2>Participation Benefits</h2>
+      <ul>
+        <li>Listing on Tokyo Ruby Kaigi 10's Web Site</li>
+        <li>A chance to to promote your community at the conference itself</li>
+      </ul>
+      <br>
+      <h2>Application Method</h2>
+      We are currently recruiting communities. Please see <a href="http://rubykaigi.tdiary.net/20120810.html#p01">the details here</a> (Japanese).
+
+      <% @communities.each do |c| %>
+        <div class="modal hide fade" id='<%= c.id%>' tabindex="-1" role="dialog" ariahidden="true" aria-labelledby="<%= c.id %>ModalLabel">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h3 id="<%= c.id %>ModalLabel"><%= c.name %></h3>
+          </div>
+          <div class="modal-body">
+            <%= c.description %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
