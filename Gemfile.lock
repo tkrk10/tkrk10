@@ -124,6 +124,7 @@ DEPENDENCIES
   heroku
   hirb
   hirb-unicode
+  i18n
   oauth2
   pit
   pry

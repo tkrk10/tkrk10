@@ -1,6 +1,7 @@
 require 'rubygems'
 
 require 'sinatra'
+require 'i18n'
 
 # If you're using bundler, you will need to add this
 require 'bundler/setup'
@@ -12,32 +13,43 @@ require 'pry-stack_explorer'
 
 set :public_folder, File.dirname(__FILE__) + '/static'
 
+I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
+
+before do
+  I18n.locale = request.path_info =~ %r{^/en} ? :en : :ja
+end
+
 get '/' do
-  # haml :index, :format => :html5
-  File.read(File.join('static', 'html', 'index.html'))
+  erb :index
 end
 
 get '/en' do
-  File.read(File.join('static', 'html', 'en', 'index.html'))
+  erb :"en/index"
 end
 
 get '/program.html' do
-  File.read(File.join('static', 'html', 'underConstraction.html'))
+  erb :under_construction
 end
 
 get '/register.html' do
-  # File.read(File.join('static', 'html', 'register.html'))
-  File.read(File.join('static', 'html', 'underConstraction.html'))
+  erb :under_construction
 end
 
 get '/sponsor.html' do
-  File.read(File.join('static', 'html', 'sponsor.html'))
+  erb :sponsor
 end
 
 get '/community' do
-  File.read(File.join('static', 'html', 'community', 'index.html'))
+  erb :community
 end
 
 get '/favicon.ico' do
   File.read(File.join('static', 'img', 'favicon.ico'))
 end
+
+helpers do
+  def t(*args)
+    I18n.t(*args)
+  end
+end
+
