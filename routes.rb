@@ -27,6 +27,11 @@ get '/en' do
   erb :"en/index"
 end
 
+get '/en/community' do
+  @communities = Dir[File.join(File.dirname(__FILE__), 'communities/*')].map {|f| Community.new(YAML.load_file(f)) }
+  erb :"en/community"
+end
+
 get '/program.html' do
   erb :under_construction
 end
@@ -41,7 +46,6 @@ end
 
 get '/community' do
   @communities = Dir[File.join(File.dirname(__FILE__), 'communities/*')].map {|f| Community.new(YAML.load_file(f)) }
-  @english_communities = @communities.find_all {|c| c.description_en }
   erb :community
 end
 
@@ -56,12 +60,16 @@ helpers do
 end
 
 class Community
-  attr_reader :name, :description, :description_en, :id
+  attr_reader :name, :id
 
   def initialize(args)
     @name = args["name"]
     @description = args["description"]
     @description_en = args["description_en"]
     @id = @name.gsub(/[^a-z ]/i, '')
+  end
+
+  def description
+    I18n.locale == :en && @description_en || @description
   end
 end

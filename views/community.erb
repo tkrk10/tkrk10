@@ -12,14 +12,6 @@
         <% end %>
       </ul>
       <br>
-      <h2>Tokyo Ruby Kaigi 10 - community friends</h2>
-      <ul>
-        <% @english_communities.each do |c| %>
-          <li><a data-toggle="modal" href='#<%= c.id %>_en'> (English)<%= c.name %></a></li>
-        <% end %>
-      </ul>
-
-      <br>
       <br>
       <h2>参加特典</h2>
       <ul>
@@ -47,17 +39,6 @@
           </div>
           <div class="modal-body">
             <%= c.description %>
-          </div>
-        </div>
-      <% end %>
-      <% @english_communities.each do |c| %>
-        <div class="modal hide fade" id='<%= c.id%>_en' tabindex="-1" role="dialog" ariahidden="true" aria-labelledby="<%= c.id %>_enModalLabel">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-            <h3 id="<%= c.id %>_enModalLabel"><%= c.name %></h3>
-          </div>
-          <div class="modal-body">
-            <%= c.description_en %>
           </div>
         </div>
       <% end %>
