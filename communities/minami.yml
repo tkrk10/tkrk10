@@ -1,0 +1,52 @@
+name: Minami.rb
+description: |
+  <dl>
+    <dt>Minami.rb とは</dt>
+    <dd>
+      Railsを中心に、webアプリを作るためのネタならDBでもデザインでもなんでもやります。初心者から中上級者まで楽しめるようにいろいろ用意しておりますので、大阪へお越しの際はぜひお立ち寄りください。
+    </dd>
+    <br>
+    <dt>コミュニティURL</dt>
+    <dd><a href="http://qwik.jp/minamirb/FrontPage.html">http://qwik.jp/minamirb/FrontPage.html</a></dd>
+    <br>
+    <dt>おもな開催地域</dt>
+    <dd>大阪・ミナミ</dd>
+    <br>
+    <dt>ハッシュタグ</dt>
+    <dd>#minamirb</dd>
+    <br>
+    <dt>活動</dt>
+    <dd>
+      <dl> 
+        <dt>隔月勉強会</dt>
+        <dd>隔月でどこかの週末午後に開かれる勉強会。ハンズオン＋小ネタ２本構成。</dd>
+        <dt>初心者レッスン</dt>
+        <dd>隔月勉強会の日の午前中に開かれるRails初心者向けレッスン。全5回で何か一つRailsアプリを作成。少人数制。</dd>
+        <dt>Rails Hackathon</dt>
+        <dd>半年に１度のペースで開かれるRails Hackathon。他の.rbコミュニティーと共催（遠征）もあり。</dd>
+        <dt>業務後ティータイム</dt>
+        <dd>ぼ隔週水曜日の業務後にCDD(Cake Driven Development)での自習タイム。＊ML登録者のみ＊</dd>
+      </dl>
+    </dd>
+    <br>
+    <dt>分科会</dt>
+    <dd>
+      <dl>
+        <dt>英語はおかず</dt>
+        <dd>ITをネタにした英語の勉強会。＊ML登録者のみ＊</dd>
+        <dt>数学のちライス（2013年1月より開催予定）</dt>
+        <dd>プログラミングに通じる数学の勉強会</dd>
+      </dl>
+    </dd>
+    <br>
+    <dt>番外編</dt>
+    <dd>
+      <dl>
+        <dt>サントリー山崎蒸留所見学ツアー</dt>
+        <dd>ウィスキーを飲みに行きます</dd>
+        <dt>日本酒酒蔵ツアー</dt>
+        <dd>日本酒も飲みに行きます</dd>
+      </dl>
+      （夏はビールフェスとかも行きます。）
+    </dd>
+  </dl>

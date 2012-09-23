@@ -35,3 +35,4 @@ gem 'thin'
 
 gem 'heroku'
 gem 'foreman'
+gem 'i18n'

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= t(:title_tag)%> </title>
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/additional.css" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+</head>
+<body>
+  <!-- navigator -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="brand">
+          <a href="<%= I18n.locale == :en ? "/en" : "/"%>"><%= t(:tokyo_ruby_kaigi_10) %></a>
+        </div>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <% if I18n.locale == :en %>
+              <li><a href="/en/community">Participating Communities</a><li>
+              <li><a href="/">日本語</a><li>
+            <% else %>
+              <li><a href="/sponsor.html">スポンサー</a><li>
+              <li><a href="/community">参加コミュニティ</a></li>
+              <li><a href="/en">English</a><li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /navigator -->
+  <%= yield %>
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>
