@@ -1,0 +1,27 @@
+name: Tokyo Rubyist Meetup
+description: |
+  <dl>
+    <dt>Tokyo Rubyist Meetupについて</dt>
+    <dd>
+      Tokyo Rubyist Meetupは、日本のRubyistと世界のRubyistとをつなげるための場になることを目指して設立されました。定例会には、東京近郊に住んでいる海外出身のRubyistたちと日本人Rubyistたちが参加します。例会の公用語は英語になりますが、英語が苦手な方も、一緒に英語の練習をするくらいのつもりでお気軽にご参加ください。
+    </dd>
+    <dt>ハッシュタグ</dt>
+    <dd>#trbmeetup</dd>
+    <dt>主催者</dt>
+    <dd>@pwim</dd>
+    <dt>公式サイト</dt>
+    <dd><a href="http://www.tokyorubyistmeetup.org/">http://www.tokyorubyistmeetup.org/</a></dd>
+  </dl>
+description_en: |
+  <dl>
+    <dt>About Tokyo Rubyist Meetup</dt>
+    <dd>
+      Tokyo Rubyist Meetup seeks to help bridge the Japan and international ruby and ruby on rails community. It will hold regular meetings where Japanese Rubyists can communicate with international Rubyists living in Tokyo. Meetings will be held in English, but anyone is encouraged to participate regardless of their ability.
+    </dd>
+    <dt>Hashtag</dt>
+    <dd>#trbmeetup</dd>
+    <dt>Organizer</dt>
+    <dd>@pwim</dd>
+    <dt>Official Site</dt>
+    <dd><a href="http://www.tokyorubyistmeetup.org/">http://www.tokyorubyistmeetup.org/</a></dd>
+  </dl>
