@@ -66,7 +66,7 @@ class Community
     @name = args["name"]
     @description = args["description"]
     @description_en = args["description_en"]
-    @id = @name.gsub(/[^a-z ]/i, '')
+    @id = @name.gsub(/[^a-z]/i, '')
   end
 
   def description
