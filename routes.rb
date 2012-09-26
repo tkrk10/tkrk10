@@ -33,7 +33,7 @@ get '/en/community' do
 end
 
 get '/program.html' do
-  erb :under_construction
+  erb :program
 end
 
 get '/register.html' do
