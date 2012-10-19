@@ -30,6 +30,7 @@ gem 'sass'
 gem 'pit'
 
 gem 'addressable'
+gem 'hashie'
 
 gem 'thin'
 

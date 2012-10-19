@@ -1,0 +1,10 @@
+---
+:id: '4'
+:name: do_aki
+:twitter: do_aki
+:url: http://d.hatena.ne.jp/do_aki/
+:org: 
+:title: PHP と Ruby の架け橋 (仮)
+:desc: ! 'PHP から ruby script を実行できる php-ext-ruby と
+
+  Ruby から php script を実行できる ruby-ext-php についての紹介をします'

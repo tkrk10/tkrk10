@@ -2,6 +2,7 @@ require 'rubygems'
 
 require 'sinatra'
 require 'i18n'
+require 'hashie'
 
 # If you're using bundler, you will need to add this
 require 'bundler/setup'
@@ -47,6 +48,11 @@ end
 get '/community' do
   @communities = Dir[File.join(File.dirname(__FILE__), 'communities/*')].map {|f| Community.new(YAML.load_file(f)) }
   erb :community
+end
+
+get '/speaker/:id' do
+  @speaker = Hashie::Mash.new(YAML.load_file(File.join(File.dirname(__FILE__), "speakers/#{params[:id].to_i}.yml")))
+  erb :speaker_detail
 end
 
 get '/favicon.ico' do

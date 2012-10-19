@@ -1,0 +1,30 @@
+---
+:id: '9'
+:name: joker1007
+:twitter: joker1007
+:url: http://d.hatena.ne.jp/joker1007/
+:org: ! 'Yokohama.rb
+
+  Shibuya.rb'
+:title: ! '「Rails設計入門」
+
+  or
+
+  「Rubyでリファクタリングを学ぶ」
+
+  or
+
+  「RubyistのためのHaskell入門」'
+:desc: ! '「Rails設計入門」
+
+  自身の経験を元に、Railsでアプリケーションを作る時に、考えるべき事をまとめる。コードとしてよりMVCでWebアプリを書く際の設計の考え方について。
+
+
+  「Rubyでリファクタリングを学ぶ」
+
+  リファクタリング Rubyエディションを読んで学んだことについてまとめる。コードの具体例やRubyならではのテクニックにフォーカスしたい。
+
+
+  「RubyistのためのHaskell入門」
+
+  最近、学んでいるHaskellの考え方について、Rubyのコードに似た関数を元に簡単な解説をする。'
