@@ -42,6 +42,7 @@ GEM
     foreman (0.48.0)
       thor (>= 0.13.6)
     haml (3.1.6)
+    hashie (1.2.0)
     heroku (2.28.10)
       heroku-api (~> 0.2.7)
       launchy (>= 0.3.2)
@@ -123,6 +124,7 @@ DEPENDENCIES
   capistrano_colors
   foreman
   haml
+  hashie
   heroku
   hirb
   hirb-unicode
