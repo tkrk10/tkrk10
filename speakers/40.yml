@@ -6,3 +6,4 @@
 :org: NHN Japan
 :title: ! 'Fluentd: The ruby-based middleware across the world'
 :desc: Fluentdというログ収集ミドルウェアが、言語の壁を超えていかにバックエンドエンジニアの心を掴んだか、それによって何が得られたのか、どのように新しい世界が開け、そこでどのようにRubyが書かれているかについて話します。
+:comment: 
