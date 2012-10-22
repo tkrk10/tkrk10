@@ -4,7 +4,9 @@
 :twitter: ursm
 :url: http://ursm.jp
 :org: 株式会社永和システムマネジメント
-:title: (未定)
-:desc: Rails with PostgreSQL (https://github.com/ursm/okark01-rails-with-postgres)
-  の続きか、Ember.js のご紹介
+:title: Introduction to Ember.js
+:desc: Ember.js はクライアントサイド MVC フレームワークの1つです。
+  前身の SproutCore から数えると5年以上の歴史を持つ (この分野では)
+  古参のフレームワークですが、過去の知見を生かしつつとても活発に開発が進められています。
+  本発表は主にサーバサイドプログラミングをされている方を対象に、Ember.js のコンセプトや特徴的な機能についてお話しします。
 :comment: どっちがより主旨に合ってますかね。
