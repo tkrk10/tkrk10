@@ -49,3 +49,9 @@ body {
 #gold-sponsors > div + div {
   margin-top: 10px;
 }
+
+/* Timetable */
+.name-and-tiele, .title-only {
+  width: 90%;
+}
+

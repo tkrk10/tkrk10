@@ -50,7 +50,11 @@ get '/community' do
   erb :community
 end
 
-get '/speaker/:id' do
+get '/timetable' do
+  erb :timetable
+end
+
+get '/speakers/:id' do
   @speaker = Hashie::Mash.new(YAML.load_file(File.join(File.dirname(__FILE__), "speakers/#{params[:id].to_i}.yml")))
   erb :speaker_detail
 end
