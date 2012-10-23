@@ -1,6 +1,6 @@
 ---
 :id: '69'
-:name: Ryo Nakamura
+:name: r7kamura
 :twitter: r7kamura
 :url: https://github.com/r7kamura
 :org: COOKPAD
@@ -9,3 +9,4 @@
 
 
   本発表では、Rubyに雑多な仕事を任せる方法とその仕組みを解説し、いつもの日常がRubyによって少しずつ変わっていく様子を紹介します。'
+:comment: ?????
