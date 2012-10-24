@@ -6,6 +6,7 @@ require 'hashie'
 
 # If you're using bundler, you will need to add this
 require 'bundler/setup'
+require 'active_support/all'
 
 require 'pry'
 require 'pry-nav'
