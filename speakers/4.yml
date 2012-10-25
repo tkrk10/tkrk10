@@ -3,9 +3,19 @@
 :name: do_aki
 :twitter: do_aki
 :url: http://d.hatena.ne.jp/do_aki/
-:org: 
-:title: PHP と Ruby の架け橋 (仮)
-:desc: ! 'PHP から ruby script を実行できる php-ext-ruby と
+:org: 株式会社もしも
+:title: PHP と Ruby の架け橋
+:desc: ! 'PHP から ruby script を実行できる php 拡張と
 
-  Ruby から php script を実行できる ruby-ext-php についての紹介をします'
-:comment: 
+  Ruby から php script を実行できる php_embed についての紹介をします。
+
+
+  双方の言語で似たような拡張を作ったことで感じた、
+
+  拡張ライブラリの作成という観点での php と ruby の違いもお話しできると思います。'
+:comment: ! 'php と聞いただけで逃げ出さないでいただけると幸いです……。
+
+  あ、そこ石投げないで＞＜
+
+
+'
