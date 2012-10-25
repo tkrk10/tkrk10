@@ -2,7 +2,9 @@
   <div class="row-fluid">
     <dl>
       <dt>名前</dt><dd><%= @speaker.name %></dd>
-      <dt>Twitter</dt><dd><%= @speaker.twitter %></dd>
+      <% if @speaker.twitter.present? %>
+        <dt>Twitter</dt><dd><a href="http://twitter.com/<%= @speaker.twitter %>"><%= @speaker.twitter %></a></dd>
+      <% end %>
       <% if @speaker.url.present? %>
         <dt>URL</dt><dd><a href="<%= @speaker.url %>"><%= @speaker.url %></a></dd>
       <% end %>
