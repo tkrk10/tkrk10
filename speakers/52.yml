@@ -1,9 +1,9 @@
 ---
 :id: '52'
 :name: 前橋孝広
-:twitter: 
+:twitter: tmeb4
 :url: 
-:org: 
-:title: Rubyによる分散処理
-:desc: 複数のマシンを使う分散処理(MapReduce)を、Rubyで実装したことについて発表
+:org: 株式会社インターネットイニシアティブ
+:title: Rubyによるお手軽分散処理
+:desc: 大量のデータを複数のマシンを使って並列分散処理する技術MapReduceを、RubyとGlusterFSとUnixパイプラインを使って実現したことについて発表します。
 :comment: 

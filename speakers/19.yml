@@ -1,12 +1,10 @@
 ---
 :id: '19'
-:name: 安川　要平
+:name: 安川要平
 :twitter: yasulab
 :url: http://yasulab.jp/
-:org: A founder of Okinawa.rb and organizer of CoderDojo Tokyo/Okinawa.
-:title: みんなで沖縄に集まって Rails Hackathon をやってみた。
-:desc: 2012年11月に行われる Rails Hackathon in Okinawa の結果を報告すると共に、第3・第4 の Rails Hackathon
-  を、世界のどこかでやろうと促します。また、「次は是非ウチで！」という感じでホスティングしてくれる Ruby User Community を募集します。
-:comment: ! 'Rails Hackathon in Okinawa
-
-  http://railshackathon.net/'
+:org: Okinawa.rb / YasuLab (個人事業主)
+:title: 沖縄に集まって Rails Hackathon をやってみた。
+:desc: 2012年11月に行われた Rails Hackathon in Okinawa の経過および結果を報告します。また、「次は是非ウチで！」という感じでホスティングしてくれる
+  Ruby User Community を募集します。
+:comment: 是非地方でまたハッカソンを開いて欲しいので、特に、遠方から来た方々に聞いて頂けるととても嬉しいです。よろしくお願いします。

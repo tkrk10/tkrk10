@@ -6,8 +6,10 @@
 :org: ! 'Yokohama.rb
 
   RubyMotion JP'
-:title: RubyMotion ではじめる！楽しい iOS アプリ開発。
+:title: RubyMotion ではじめる！楽しい iOS アプリ開発
 :desc: ! 'RubyMotion を使って楽しく iOS の開発を行う方法を紹介します。
 
-  RubyMotion の経験はもちろん、iOS 開発の経験が無い方も安心し聞いていただける内容にします。'
-:comment: RubyMotion コミッターの Watsonさんもいるので、深い話よりは入門者向けに寄せようと思います。
+  RubyMotion の特徴などの紹介から実際の開発の流れがわかるミニライブコーディング、ハマりどころを回避する情報収集法などをお伝えする予定です。'
+:comment: ! 'RubyMotionのおかげで、RubyistにとってiOS開発が非常に身近になったと思います。
+
+  この発表をきっかけにiOS開発に踏み出せる人が増えるといいなぁ。。。と思っています。'

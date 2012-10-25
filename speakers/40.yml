@@ -1,9 +1,9 @@
 ---
 :id: '40'
-:name: tagomoris
+:name: 田籠聡
 :twitter: tagomoris
 :url: http://d.hatena.ne.jp/tagomoris/
-:org: NHN Japan
+:org: NHN Japan株式会社
 :title: ! 'Fluentd: The ruby-based middleware across the world'
 :desc: Fluentdというログ収集ミドルウェアが、言語の壁を超えていかにバックエンドエンジニアの心を掴んだか、それによって何が得られたのか、どのように新しい世界が開け、そこでどのようにRubyが書かれているかについて話します。
 :comment: 
