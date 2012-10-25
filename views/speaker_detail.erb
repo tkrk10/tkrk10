@@ -6,6 +6,9 @@
       <dt>所属</dt><dd><%= @speaker.org %></dd>
       <dt>発表タイトル</dt><dd><%= @speaker.title %></dd>
       <dt>発表概要</dt><dd><%= @speaker.desc %></dd>
+      <% if @speaker.comment.present? %>
+        <dt>参加者に向けて一言</dt><dd><%= @speaker.comment %></dd>
+      <% end %>
     </dl>
   </div>
 </div>
