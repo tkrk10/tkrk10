@@ -55,3 +55,17 @@ body {
   width: 90%;
 }
 
+.invited {
+  background-color: crimson;
+  border-radius: 8px;
+  color: white;
+  padding: 2px 5px;
+}
+
+.video {
+  background-color: orange;
+  border-radius: 8px;
+  color: white;
+  padding: 2px 5px;
+}
+
