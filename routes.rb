@@ -52,6 +52,7 @@ get '/community' do
 end
 
 get '/timetable' do
+  @sessions = Session.all
   erb :timetable
 end
 
@@ -82,5 +83,33 @@ class Community
 
   def description
     I18n.locale == :en && @description_en || @description
+  end
+end
+
+class Session
+  attr_reader :time, :speaker_id, :workshop_name, :workshop_sessions, :invited, :video
+  def self.all
+    @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "sessions.yml")).map {|a| a.map {|h| Session.new(h)}}
+  end
+  def initialize(args)
+    @time, @title, @speaker_id, @workshop_name, @workshop_sessions, @invited, @video = 
+      %w[time title speaker_id workshop_name workshop_sessions invited video].
+        map {|s| args[s]}
+  end
+
+  def title
+    @title || speaker.title
+  end
+
+  def speaker
+    @speaker = Speaker.find(@speaker_id) unless defined?(@speaker) || !@speaker_id
+    @speaker
+  end
+
+end
+
+class Speaker
+  def self.find(id)
+    Hashie::Mash.new(YAML.load_file(File.join(File.dirname(__FILE__), "speakers/#{id}.yml")))
   end
 end
