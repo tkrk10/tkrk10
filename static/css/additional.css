@@ -51,8 +51,14 @@ body {
 }
 
 /* Timetable */
-.name-and-tiele, .title-only {
-  width: 90%;
+.time {
+  width: 10%;
+}
+.content {
+  width: 40%;
+}
+.workshop {
+  width: 40%;
 }
 
 .invited {
