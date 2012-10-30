@@ -57,7 +57,7 @@ get '/timetable' do
 end
 
 get '/speakers/:id' do
-  @speaker = Hashie::Mash.new(YAML.load_file(File.join(File.dirname(__FILE__), "speakers/#{params[:id].to_i}.yml")))
+  @speaker = Speaker.find(params[:id])
   erb :speaker_detail
 end
 
@@ -110,6 +110,14 @@ end
 
 class Speaker
   def self.find(id)
-    Hashie::Mash.new(YAML.load_file(File.join(File.dirname(__FILE__), "speakers/#{id}.yml")))
+    new(YAML.load_file(File.join(File.dirname(__FILE__), "speakers/#{id}.yml")))
+  end
+
+  attr_reader :name, :twitter, :url, :org, :title, :desc, :comment
+
+  def initialize(args)
+    %w[name twitter url org title desc comment].each do |s|
+      instance_variable_set("@#{s}", args[s.to_sym])
+    end
   end
 end
