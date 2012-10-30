@@ -1,0 +1,24 @@
+<tr>
+  <td class="time"><%= timetable_session.time %></td>
+  <td class="content">
+    <% if timetable_session.speaker %>
+      <div class="name">
+        <%= timetable_session.speaker.name %>
+        <% if timetable_session.invited %>
+          <span class="invited">招待</span>
+        <% end %>
+        <% if timetable_session.video %>
+          <span class="video">ビデオ</span>
+        <% end %>
+      </div>
+      <div class="title"><a href="/speakers/<%= timetable_session.speaker_id %>"><%= timetable_session.title %></a></div>
+    <% else %>
+      <div class="title"><%= timetable_session.title %></div>
+    <% end %>
+  </td>
+  <% if timetable_session.workshop_sessions %>
+    <td class="workshop" rowspan="<%= timetable_session.workshop_sessions %>">
+      <div class="name"><%= timetable_session.workshop_name %></div>
+    </td>
+  <% end %>
+</tr>

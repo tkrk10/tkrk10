@@ -52,7 +52,7 @@ get '/community' do
 end
 
 get '/timetable' do
-  @sessions = Session.all
+  @sessions = TimetableSession.all
   erb :timetable
 end
 
@@ -86,10 +86,10 @@ class Community
   end
 end
 
-class Session
+class TimetableSession
   attr_reader :time, :speaker_id, :workshop_name, :workshop_sessions, :invited, :video
   def self.all
-    @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "sessions.yml")).map {|a| a.map {|h| Session.new(h)}}
+    @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "sessions.yml")).map {|a| a.map {|h| TimetableSession.new(h)}}
   end
   def initialize(args)
     @time, @title, @speaker_id, @workshop_name, @workshop_sessions, @invited, @video = 

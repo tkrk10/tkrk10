@@ -13,31 +13,8 @@
           <th class="content">メインホール</th>
           <th class="workshop">ワークショップ</th>
         </tr>
-        <% @sessions[i].each do |session| %>
-          <tr>
-            <td class="time"><%= session.time %></td>
-            <td class="content">
-              <% if session.speaker %>
-                <div class="name">
-                  <%= session.speaker.name %>
-                  <% if session.invited %>
-                    <span class="invited">招待</span>
-                  <% end %>
-                  <% if session.video %>
-                    <span class="video">ビデオ</span>
-                  <% end %>
-                </div>
-                <div class="title"><a href="/speakers/<%= session.speaker_id %>"><%= session.title %></a></div>
-              <% else %>
-                <div class="title"><%= session.title %></div>
-              <% end %>
-            </td>
-            <% if session.workshop_sessions %>
-              <td class="workshop" rowspan="<%= session.workshop_sessions %>">
-                <div class="name"><%= session.workshop_name %></div>
-              </td>
-            <% end %>
-          </tr>
+        <% @sessions[i].each do |timetable_session| %>
+          <%= erb :_timetable_session, locals: { timetable_session: timetable_session } %>
         <% end %>
       </table>
     <% end %>
