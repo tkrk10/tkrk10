@@ -8,9 +8,8 @@
   Shibuya.rb
 
   (株)ウサギィ'
-:title: ! '「Railsプログラマーの日常」
-
-'
+:title: '「Railsプログラマーの日常」'
+:title_en: A Day in the Life of a Rails Programmer
 :desc: ! '「Railsプログラマーの日常」
 
   ・自身の日常の業務を元に、アジャイルな現場でのアプリケーション開発の流れと、Railsでアプリケーションを作る時に、考えるべき事、設計の考え方について。

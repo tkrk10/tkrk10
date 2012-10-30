@@ -7,6 +7,7 @@
 
   RubyMotion JP'
 :title: RubyMotion ではじめる！楽しい iOS アプリ開発
+:title_en: Fun iOS Application Development with Ruby Motion
 :desc: ! 'RubyMotion を使って楽しく iOS の開発を行う方法を紹介します。
 
   RubyMotion の特徴などの紹介から実際の開発の流れがわかるミニライブコーディング、ハマりどころを回避する情報収集法などをお伝えする予定です。'

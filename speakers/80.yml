@@ -5,5 +5,6 @@
 :url: http://blog.mat-aki.net/
 :org: 株式会社ソニックガーデン
 :title: Rails向けモバイルアプリ開発フレームワーク Pera をリリース！
+:title_en: Pera, a Mobile Appli Framework for Rails, is released!
 :desc: Railsと連携しモバイルアプリを開発できるようにするフレームワーク Pera をリリースします。Webアプリだけでなくモバイルアプリまでを少ないコストで作れるフレームワークを目指しています。
 :comment: まだまだ出来立てのフレームワークなので、ぜひ一度触ってみてフィードバック・ご意見をいただければと思っています。

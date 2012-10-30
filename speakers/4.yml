@@ -5,6 +5,7 @@
 :url: http://d.hatena.ne.jp/do_aki/
 :org: 株式会社もしも
 :title: PHP と Ruby の架け橋
+:title_en: A Bridge Between PHP and Ruby
 :desc: ! 'PHP から ruby script を実行できる php 拡張と
 
   Ruby から php script を実行できる php_embed についての紹介をします。

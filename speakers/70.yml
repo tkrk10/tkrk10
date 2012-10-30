@@ -5,5 +5,6 @@
 :url: http://tmtms.hatenablog.com/
 :org: NSEG(長野ソフトウェア技術者グループ)
 :title: 本当はこわいエンコーディングの話
+:title_en: Terrifying Tales of Encoding
 :desc: Ruby 1.9 のエンコーディングについて、ちょっとしたことでプログラムが落ちてしまうとか、落ちないようにするために気をつけないといけないこととかを話します。
 :comment: 
