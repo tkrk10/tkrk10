@@ -5,5 +5,6 @@
 :url: http://github.com/iij/mruby
 :org: 株式会社インターネットイニシアティブ
 :title: 軽量Rubyで実現する柔軟なルータ -SEILへの軽量Rubyの組み込み-
+:title_en: A Lightweight Router Implemented in Ruby
 :desc: IIJでは「SEIL(ザイル)」と呼ばれるルータを自社開発しています。今回の発表では、ルータに大きな柔軟性を持たせるための取り組みとして、SEILへの軽量Rubyの組み込みについてご紹介します。
 :comment: 

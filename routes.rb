@@ -34,6 +34,11 @@ get '/en/community' do
   erb :"en/community"
 end
 
+get '/en/timetable' do
+  @sessions = TimetableSession.all
+  erb :timetable
+end
+
 get '/program.html' do
   erb :program
 end
@@ -87,18 +92,22 @@ class Community
 end
 
 class TimetableSession
-  attr_reader :time, :speaker_id, :workshop_name, :workshop_sessions, :invited, :video
+  attr_reader :time, :speaker_id, :workshop_sessions, :invited, :video
   def self.all
     @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "sessions.yml")).map {|a| a.map {|h| TimetableSession.new(h)}}
   end
   def initialize(args)
-    @time, @title, @speaker_id, @workshop_name, @workshop_sessions, @invited, @video = 
-      %w[time title speaker_id workshop_name workshop_sessions invited video].
+    @time, @title, @title_en, @speaker_id, @workshop_name, @workshop_name_en, @workshop_sessions, @invited, @video = 
+      %w[time title title_en speaker_id workshop_name workshop_name_en workshop_sessions invited video].
         map {|s| args[s]}
   end
 
   def title
-    @title || speaker.title
+    I18n.locale == :en && @title_en || @title || speaker.title
+  end
+
+  def workshop_name
+    I18n.locale == :en && @workshop_name_en || @workshop_name
   end
 
   def speaker
@@ -113,11 +122,15 @@ class Speaker
     new(YAML.load_file(File.join(File.dirname(__FILE__), "speakers/#{id}.yml")))
   end
 
-  attr_reader :name, :twitter, :url, :org, :title, :desc, :comment
+  attr_reader :name, :twitter, :url, :org, :desc, :comment
 
   def initialize(args)
-    %w[name twitter url org title desc comment].each do |s|
+    %w[name twitter url org title title_en desc comment].each do |s|
       instance_variable_set("@#{s}", args[s.to_sym])
     end
+  end
+
+  def title
+    I18n.locale == :en && @title_en || @title
   end
 end
