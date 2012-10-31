@@ -5,10 +5,10 @@
       <div class="name">
         <%= timetable_session.speaker.name %>
         <% if timetable_session.invited %>
-          <span class="invited">招待</span>
+          <span class="invited"><%= t(:invited) %></span>
         <% end %>
         <% if timetable_session.video %>
-          <span class="video">ビデオ</span>
+          <span class="video"><%= t(:video) %></span>
         <% end %>
       </div>
       <div class="title"><a href="/speakers/<%= timetable_session.speaker_id %>"><%= timetable_session.title %></a></div>

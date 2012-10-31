@@ -5,6 +5,7 @@
 :url: 
 :org: tokyu.rb,yokohama.rb
 :title: DBAからRailsエンジニアになって、モデルがふくよかなことに気がついた。
+:title_en: From DBA to Rails Engineer, the Discovery of Fat Models
 :desc: Modelについて思ったこととか、ActiveRecordのソースを覗いてみたこととか、DBAからRailsエンジニアになって気がついたこと、気になったことをつらつらと。
 :comment: ! '頭の中のモデルと、Railsアプリのコードとの不整合(というか知識不足なだけの勘違い)について、思ったことを話します。
 

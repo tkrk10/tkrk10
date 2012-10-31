@@ -1,17 +1,23 @@
 <div class="container">
   <div class="row-fluid">
     <div class="page-header">
-      <h1>タイムテーブル</h1>
+      <h1><%= t(:timetable) %></h1>
     </div>
+    <% if I18n.locale == :en %>
+      <div class="alert alert-notice">
+        <h3>Assistance Required!</h3>
+        <p>The translations of the titles of the presentations were translated in a best effort manner. Help improving the translations would be greatly appreciated. You can help out by forking the site's repo and updating the <a href="https://github.com/tkrk10/tkrk10/tree/master/speakers">session translations</a>. If you have any questions, feel free to contact us at tokyo10 at rubykaigi dot org.</p>
+      </div>
+    <% end %>
 
-    <% ["1月13日（日）", "1月14日（月・祝）"].each_with_index do |day, i| %>
-      <h2><%= day %></h2>
+    <% [:first_day, :second_day].each_with_index do |day, i| %>
+      <h2><%= t(day) %></h2>
 
       <table class="timetable table table-condensed table-striped table-bordered">
         <tr>
           <th class="time"></th>
-          <th class="content">メインホール</th>
-          <th class="workshop">ワークショップ</th>
+          <th class="content"><%= t(:main_hall) %></th>
+          <th class="workshop"><%= t(:workshop) %></th>
         </tr>
         <% @sessions[i].each do |timetable_session| %>
           <%= erb :_timetable_session, locals: { timetable_session: timetable_session } %>

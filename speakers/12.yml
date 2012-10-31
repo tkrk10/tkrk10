@@ -5,6 +5,7 @@
 :url: http://framgia.com
 :org: 株式会社フランジア・ジャパン CTO
 :title: Ruby、RoRでのオフショア開発をハノイで行ってみたら・・・
+:title_en: I tried offshoring Ruby on Rails developement to Hanoi...
 :desc: ! '我々framgia（フランジア）が約1年RoRをメインにベトナムでオフショア開発を行って来た経験を基に、
 
   ・何故オフショア開発を行う会社としてメインの技術をRuby、RoRに選んだのか
