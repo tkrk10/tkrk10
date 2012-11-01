@@ -19,7 +19,9 @@
     title: 昼休憩
     title_en: Lunch Break
     workshop: true
+    workshop_id: p4d
     workshop_name: '12:00-18:00 #p4d'
+    workshop_title: Rubyistのためのデザイン講座
     workshop_sessions: 18
   - time: 13:30-13:45
     speaker_id: 17
