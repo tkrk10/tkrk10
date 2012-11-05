@@ -75,3 +75,15 @@ body {
   padding: 2px 5px;
 }
 
+#message {
+  font-size: 18px;
+  line-height: 115%;
+  margin: 20px 20px 30px 20px;
+  padding: 0px;
+}
+
+#message p {
+  margin: 0px;
+  padding: 0px;
+  text-indent: 1em;
+}
