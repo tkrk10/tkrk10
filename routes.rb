@@ -70,6 +70,10 @@ get '/workshops/p4d' do
   erb :'workshops/p4d'
 end
 
+get '/workshops/toruby' do
+  erb :'workshops/toruby'
+end
+
 get '/favicon.ico' do
   File.read(File.join('static', 'img', 'favicon.ico'))
 end
