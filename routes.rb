@@ -40,7 +40,7 @@ get '/en/timetable' do
 end
 
 get '/program.html' do
-  erb :program
+  redirect to("/timetable")
 end
 
 get '/register.html' do
