@@ -22,6 +22,7 @@ before do
 end
 
 get '/' do
+  @sessions = TimetableSession.all
   erb :index
 end
 

@@ -47,6 +47,35 @@
   </section>
   <section>
     <div class='page-header'>
+      <h2><%= t(:timetable) %></h2>
+    </div>
+    <% if I18n.locale == :en %>
+      <div class="alert alert-notice">
+        <h3>Assistance Required!</h3>
+        <p>The translations of the titles of the presentations were translated in a best effort manner. Help improving the translations would be greatly appreciated. You can help out by forking the site's repo and updating the <a href="https://github.com/tkrk10/tkrk10/tree/master/speakers">session translations</a>. If you have any questions, feel free to contact us at tokyo10 at rubykaigi dot org.</p>
+      </div>
+    <% end %>
+    <div id="message">
+      <p>今回のテーマは「話そう、集まろう、いつものRuby、日常のRuby」です。どんなエンジニアでも、日常的にプログラミングに触れていれば何かしら人に伝えられることがあると思います。そんな日常の話を手に、発表の場に飛び込んでもらうきっかけになりたいという想いのもと、東京Ruby会議10は企画されました。</p>
+      <p>スピーカーセッションの決定にあたっては、「東京Ruby会議10だからこそ聴きたい」と思ったものを実行委員たちで選ばせていただきました。その結果、練達のプログラマーから新しいことに挑むフレッシュなエンジニアまで、エンジニアの多い東京地域を象徴するかのような多彩なセッション構成となりました。</p>
+    </div>
+    <% [:first_day, :second_day].each_with_index do |day, i| %>
+      <h3><%= t(day) %></h3>
+
+      <table class="timetable table table-condensed table-striped table-bordered">
+        <tr>
+          <th class="time"></th>
+          <th class="content"><%= t(:main_hall) %></th>
+          <th class="workshop"><%= t(:workshop) %></th>
+        </tr>
+        <% @sessions[i].each do |timetable_session| %>
+          <%= erb :_timetable_session, locals: { timetable_session: timetable_session } %>
+        <% end %>
+      </table>
+    <% end %>
+  </section>
+  <section>
+    <div class='page-header'>
       <h2>東京Ruby会議10 実行委員会について</h2>
     </div>
     <div>
