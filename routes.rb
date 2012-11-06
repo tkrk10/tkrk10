@@ -40,7 +40,7 @@ get '/en/timetable' do
 end
 
 get '/program.html' do
-  erb :program
+  redirect to("/timetable")
 end
 
 get '/register.html' do
@@ -68,6 +68,14 @@ end
 
 get '/workshops/p4d' do
   erb :'workshops/p4d'
+end
+
+get '/workshops/toruby' do
+  erb :'workshops/toruby'
+end
+
+get '/workshops/sukusuku' do
+  erb :'workshops/sukusuku'
 end
 
 get '/favicon.ico' do
