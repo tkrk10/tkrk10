@@ -79,6 +79,14 @@ get '/workshops/sukusuku' do
   erb :'workshops/sukusuku'
 end
 
+get '/kurorubykaigi' do
+  erb :kurorubykaigi
+end
+
+get '/jimotorubykaigi' do
+  erb :jimotorubykaigi
+end
+
 get '/favicon.ico' do
   File.read(File.join('static', 'img', 'favicon.ico'))
 end
