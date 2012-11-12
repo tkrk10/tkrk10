@@ -1,6 +1,4 @@
 source "http://rubygems.org"
-source "http://gems.rubyforge.org"
-source "http://gemcutter.org"
 
 gem 'rack', :git => 'git://github.com/rack/rack.git'
 
