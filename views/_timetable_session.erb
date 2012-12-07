@@ -14,6 +14,10 @@
       <div class="title">
         <a href="/speakers/<%= timetable_session.speaker_id %>"><%= timetable_session.title %></a>
       </div>
+    <% elsif timetable_session.link %>
+      <div class="title">
+        <a href="<%= timetable_session.link %>"><%= timetable_session.title %></a>
+      </div>
     <% else %>
       <div class="title"><%= timetable_session.title %></div>
     <% end %>
