@@ -102,9 +102,9 @@
     workshop: true
     workshop_id: sukusuku
     workshop_name: '12:45-17:00 すくすくスクラム'
-    workshop_name_en: 12:45-17:00 Rapid Scrum
-    workshop_title: (TBA)
-    workshop_title_en: (TBA)
+    workshop_name_en: 12:45-17:00 sukusuku scrum 
+    workshop_title: (すくすくスクラム オープンスペース)
+    workshop_title_en: (suc3rum OpenSpace)
     workshop_sessions: 14
   - time: 13:15-13:30
     speaker_id: 63
