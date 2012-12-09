@@ -113,12 +113,12 @@ class Community
 end
 
 class TimetableSession
-  attr_reader :time, :speaker_id, :workshop_id, :workshop_sessions, :invited, :video
+  attr_reader :time, :speaker_id, :workshop_id, :workshop_sessions, :invited, :video, :link
   def self.all
     @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "sessions.yml")).map {|a| a.map {|h| TimetableSession.new(h)}}
   end
   def initialize(args)
-    %w[time title title_en speaker_id workshop_id workshop_name workshop_title workshop_title_en workshop_name_en workshop_sessions invited video].each do |s|
+    %w[time title title_en speaker_id workshop_id workshop_name workshop_title workshop_title_en workshop_name_en workshop_sessions invited video link].each do |s|
       instance_variable_set("@#{s}", args[s])
     end
   end
