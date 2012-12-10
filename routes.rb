@@ -87,10 +87,6 @@ get '/jimotorubykaigi' do
   erb :jimotorubykaigi
 end
 
-get '/kurorubykaigi' do
-  erb :kurorubykaigi
-end
-
 get '/favicon.ico' do
   File.read(File.join('static', 'img', 'favicon.ico'))
 end
