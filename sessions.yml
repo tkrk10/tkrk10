@@ -47,7 +47,7 @@
   - time: 16:00-16:15
     speaker_id: 52
   - time: 16:15-16:30
-    title: 小休憩 
+    title: 小休憩
     title_en: Break
   - time: 16:30-16:45
     speaker_id: 32
@@ -71,6 +71,7 @@
   - time: 19:45-21:00
     title: 黒Ruby会議
     title_en: Kuro Ruby Kaigi
+    link: /kurorubykaigi
 - - time: 9:45-10:00
     title: アナウンス
     title_en: Announcements
