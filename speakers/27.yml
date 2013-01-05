@@ -10,8 +10,8 @@
   TDD Base Camp
 
   Shinjuku.rb'
-:title: Rails アプリケーションと継続的インテグレーション
-:title_en: Rails Applications and Continuous Integration
+:title: Jenkinsと分散ビルド
+:title_en: Distributed build with Jenkins
 :desc: ! 'Railsは自動テストが行いやすいよう厚くサポートされているフレームワークであり、自動テストを行なっている方が多いと思います。
 
   しかし、Jenkinsなどを用いた継続的インテグレーションに関しては自動テストほど取り組んでいるという話を聞きません。そこで、Jenkinsを用いてRailsアプリケーションを継続的インテグレーションしていく方法を解説します。'
