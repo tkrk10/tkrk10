@@ -1,63 +1,158 @@
 <style text="text/css">
   span.strike {
-    color: gray;
-    text-decoration: line-through;
+  color: gray;
+  text-decoration: line-through;
   }
   .important {
-    font-weight: bold;
-    color: red;
+  font-weight: bold;
+  color: #990c0c;
+  font-size: 18px;
+  margin: 8px 0;
+  display: block;
   }
-  .kuro {
-    margin: 20px 0;
-    width: 120px;
-    height: 120px;
+  .kuro img {
+  margin: 20px 0;
+  width: 120px;
+  height: 120px;
   }
   div.container p {
-    line-height: 1.8;
+  line-height: 1.8;
   }
   div.container li {
-    padding-top: 8px;
+  padding-top: 8px;
   }
   div.container dd {
-    padding-top: 8px;
+  padding-top: 8px;
   }
   div.container dt {
-    padding-top: 8px;
+  padding-top: 8px;
+  }
+  #kurorubykaigi {
+  background-color: #000;
+  background-image: url(img/kuro_bg.png);
+  min-height: 100%;
+  width: 100%;
+  color: #777;
+  font-family:"Times New Roman","ヒラギノ明朝 Pro",Hiragino Mincho Pro, HiraMinProN-W3,"ＭＳ Ｐ明朝", "MS PMincho",serif;
+  }
+  #kurorubykaigi .row-fluid {
+  max-width: 940px;
+  margin: 80px auto 80px;
+  padding: 20px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 1) inset;
+  }
+  #kurorubykaigi .page-header {
+  padding-bottom: 17px;
+  margin: 18px 0;
+  border-bottom: none;
+  }
+  #kurorubykaigi .kuro_header {
+  width: 40%;
+  display: block;
+  margin: 0 auto 60px;
+  }
+  #kurorubykaigi .kuro_footer {
+  width: 40%;
+  display: block;
+  margin: 60px auto 30px;
+  }
+  #kurorubykaigi .page-header h1 {
+  text-align: center;
+  font-size: 52px;
+  text-shadow: rgba(255, 255, 255, .7) 0 -1px 0;
+  margin: 0 0 10px;
+  letter-spacing: 6px;
+  }
+  #kurorubykaigi .page-header h1 span {
+  letter-spacing: 0px;
+  margin: 0 6px 0 0;
+  }
+  #kurorubykaigi .page-header .lead {
+  text-align: center;
+  font-size: 16px;
+  text-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  margin: 0;
+  }
+  #kurorubykaigi .kuro_body {
+  text-align: center;
+  }
+  #kurorubykaigi .kuro_body .description {
+  margin: 0 0 40px;
+  }
+  #kurorubykaigi .kuro_body h2 {
+  font-size: 32px;
+  margin: 0 0 10px;
+  }
+  #kurorubykaigi .kuro_body h2.other {
+  margin: 0 0 20px;
+  }
+  #kurorubykaigi .kuro_body .sasaXX {
+  width: 170px;
+  margin: 0 0 20px;
+  }
+  #kurorubykaigi .kuro_body .lead {
+  font-size: 18px;
+  }
+  #kurorubykaigi .kuro_body .lead:before,
+  #kurorubykaigi .kuro_body .lead:after {
+  content: "〜";
   }
 </style>
-
-<div class="container">
+<script type="text/javascript">
+  //<![CDATA[
+    var wH = $(window).height();
+    //alert (wH);
+    $(function(){
+        $('#kurorubykaigi').css('min-height',wH+'px');
+    });
+  //]]>
+</script>
+<div class="container" id="kurorubykaigi">
   <div class="row-fluid">
     <div class="page-header">
-      <h1>黒Ruby会議</h1>
+      <img class="kuro_header" src="/img/kuro_header.png" />
+      <h1>
+        黒<span>Ruby</span>会議
+      </h1>
       <p class="lead">
-        1日目 1/13(日) 19:45-21:00 2F メインホール
+        第一夜 一月十三日(日) 19:45-21:00 二階 メインホール
       </p>
     </div>
-    <div>
+    <div class="kuro_body">
       <h2>開催趣旨</h2>
       <p class="lead">
         黒Ruby会議とはなんぞや？
       </p>
+      <div class="description">
+        <p>
+          最近TwitterやFacebookなどでみなさん楽しく投稿していると思います。
+          <br />
+          しかしこれらのサービスは基本的には投稿内容が誰でも見れてしまうという問題ががが。
+          <br />
+          <span class="important">じゃあ黒い発言（あんなことやこんなこと）はどこでしたらいいんだ！？</span>
+          そう感じる場面って多いんじゃないかと思うんですよね、わかります。
+          <br />
+        </p>
+        <p>
+          そこで黒Ruby会議と銘打って、発表者の人たちに普段なかなか出来ない<span class="strike">面白い話</span>黒い話をしてもらおうYO!という企画です。
+          <br />
+          内容は発表者の方次第となっていてどんなハプニングが起こるかわかりませんが、ぜひご参加ください。
+          <br />
+          あと、発表したいっていう方がいれば tokyo10 at rubykaigi.org までご連絡ください :)
+        </p>
+      </div>
+      <h2 class="other">その他の情報</h2>
+      <img class="sasaXX" src="/img/sasaXX.png" />
       <p>
-        最近TwitterやFacebookなどでみなさん楽しく投稿していると思います。<br>
-        しかしこれらのサービスは基本的には投稿内容が誰でも見れてしまうという問題ががが。<br>
-        <span class="important">じゃあ黒い発言（あんなことやこんなこと）はどこでしたらいいんだ！？</span><br>
-        そう感じる場面って多いんじゃないかと思うんですよね、わかります。<br>
-      </p>
-      <p>
-        そこで黒Ruby会議と銘打って、発表者の人たちに普段なかなか出来ない<span class="strike"> 面白い話 </span>黒い話をしてもらおうYO!という企画です。<br>
-        内容は発表者の方次第となっていてどんなハプニングが起こるかわかりませんが、ぜひご参加ください。<br>
-        あと、発表したいっていう方がいれば tokyo10 at rubykaigi.org までご連絡ください :)
-      </p>
-
-      <div class="kuro"><img src="/img/kuro.png" /></div>
-
-      <h2>その他の情報</h2>
-      <p>
-        LT (LightningTalk) 形式でやります。司会は <a href="http://twitter.com/sasata299" target="_blank">@sasata299</a> の予定。<br>
+        LT (LightningTalk) 形式でやります。司会は
+        <a href="http://twitter.com/sasata299" target="_blank">@sasata299</a>
+        の予定。
+        <br />
         発表者は多分10人くらい ＼(^o^)／
       </p>
+      <img class="kuro_footer" src="/img/kuro_footer.png" />
     </div>
   </div>
 </div>
