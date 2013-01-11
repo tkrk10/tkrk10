@@ -97,7 +97,7 @@
     speaker_id: 12
   - time: 11:15-11:30
     speaker_id: 56
-  - time: 11:30-13:15
+  - time: 11:30-13:30
     title: 昼休み
     title_en: Lunch Break
     workshop: true
@@ -106,11 +106,9 @@
     workshop_name_en: 12:45-17:00 sukusuku scrum 
     workshop_title: (すくすくスクラム オープンスペース)
     workshop_title_en: (suc3rum OpenSpace)
-    workshop_sessions: 14
-  - time: 13:15-13:30
-    speaker_id: 63
+    workshop_sessions: 13
   - time: 13:30-13:45
-    speaker_id: 9
+    speaker_id: 63
   - time: 13:45-14:00
     speaker_id: 51
   - time: 14:00-14:15
