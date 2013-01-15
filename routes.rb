@@ -1,17 +1,6 @@
 require 'rubygems'
-
-require 'sinatra'
-require 'i18n'
-require 'hashie'
-
-# If you're using bundler, you will need to add this
-require 'bundler/setup'
-require 'active_support/all'
-
-require 'pry'
-require 'pry-nav'
-require 'pry-exception_explorer'
-require 'pry-stack_explorer'
+require 'bundler'
+Bundler.require
 
 set :public_folder, File.dirname(__FILE__) + '/static'
 
