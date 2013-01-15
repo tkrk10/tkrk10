@@ -1,11 +1,6 @@
 require 'rubygems'
-
-require 'sinatra'
-require 'i18n'
-
-# If you're using bundler, you will need to add this
-require 'bundler/setup'
-require 'active_support/all'
+require 'bundler'
+Bundler.require
 
 set :public_folder, File.dirname(__FILE__) + '/static'
 
