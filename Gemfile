@@ -1,8 +1,8 @@
 source "http://rubygems.org"
 
-gem 'rack', :git => 'git://github.com/rack/rack.git'
+gem 'rack'
 
-gem 'sinatra', :git => 'git://github.com/sinatra/sinatra.git'
+gem 'sinatra'
 gem 'haml'
 
 gem 'oauth2'
