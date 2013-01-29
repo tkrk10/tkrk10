@@ -11,7 +11,7 @@ before do
 end
 
 get '/' do
-  @sessions = TimetableSession.all
+  @sessions = TimetableSession.3rd_day
   erb :index
 end
 
@@ -25,7 +25,7 @@ get '/en/community' do
 end
 
 get '/en/timetable' do
-  @sessions = TimetableSession.all
+  @sessions = TimetableSession.3rd_day
   erb :timetable
 end
 
@@ -47,7 +47,7 @@ get '/community' do
 end
 
 get '/timetable' do
-  @sessions = TimetableSession.all
+  @sessions = TimetableSession.3rd_day
   erb :timetable
 end
 
@@ -106,6 +106,11 @@ class TimetableSession
   def self.all
     @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "sessions.yml")).map {|a| a.map {|h| TimetableSession.new(h)}}
   end
+
+  def self.3rd_day
+    @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "3rd_day_sessions.yml")).map {|a| a.map {|h| TimetableSession.new(h)}}
+  end
+
   def initialize(args)
     %w[time title title_en speaker_id workshop_id workshop_name workshop_title workshop_title_en workshop_name_en workshop_sessions invited video link].each do |s|
       instance_variable_set("@#{s}", args[s])
