@@ -25,8 +25,9 @@ get '/en/community' do
 end
 
 get '/en/timetable' do
-  @sessions = TimetableSession.third_day
-  erb :third_day_timetable
+  @sessions = TimetableSession.all
+  @third_day_sessions = TimetableSession.third_day
+  erb :timetable
 end
 
 get '/program.html' do
