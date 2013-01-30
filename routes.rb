@@ -47,8 +47,9 @@ get '/community' do
 end
 
 get '/timetable' do
-  @sessions = TimetableSession.third_day
-  erb :third_day_timetable
+  @sessions = TimetableSession.all
+  @third_day_sessions = TimetableSession.third_day
+  erb :timetable
 end
 
 get '/speakers/:id' do
@@ -108,7 +109,7 @@ class TimetableSession
   end
 
   def self.third_day
-    @sessions ||= YAML.load_file(File.join(File.dirname(__FILE__), "3rd_day_sessions.yml")).map {|a| a.map {|h| TimetableSession.new(h)}}
+    YAML.load_file(File.join(File.dirname(__FILE__), "3rd_day_sessions.yml")).map {|a| a.map {|h| TimetableSession.new(h)}}
   end
 
   def initialize(args)

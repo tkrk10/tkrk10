@@ -28,5 +28,18 @@
         <% end %>
       </table>
     <% end %>
+    <% [:third_day].each_with_index do |day, i| %>
+      <h2><%= t(day) %></h2>
+
+      <table class="timetable table table-condensed table-striped table-bordered">
+        <tr>
+          <th class="time"></th>
+          <th class="content"><%= t(:main_hall) %></th>
+        </tr>
+        <% @third_day_sessions[i].each do |timetable_session| %>
+          <%= erb :_3rd_day_timetable_session, locals: { timetable_session: timetable_session } %>
+        <% end %>
+      </table>
+    <% end %>
   </div>
 </div>
