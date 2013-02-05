@@ -1,0 +1,25 @@
+<tr>
+  <td class="time"><%= timetable_session.time %></td>
+  <td class="content">
+    <% if timetable_session.speaker %>
+      <div class="name">
+        <%= timetable_session.speaker.name %>
+        <% if timetable_session.invited %>
+          <span class="invited"><%= t(:invited) %></span>
+        <% end %>
+        <% if timetable_session.video %>
+          <span class="video"><%= t(:video) %></span>
+        <% end %>
+      </div>
+      <div class="title">
+        <a href="/speakers/<%= timetable_session.speaker_id %>"><%= timetable_session.title %></a>
+      </div>
+    <% elsif timetable_session.link %>
+      <div class="title">
+        <a href="<%= timetable_session.link %>"><%= timetable_session.title %></a>
+      </div>
+    <% else %>
+      <div class="title"><%= timetable_session.title %></div>
+    <% end %>
+  </td>
+</tr>

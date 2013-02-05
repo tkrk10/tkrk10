@@ -14,20 +14,6 @@
         <p>スピーカーセッションの決定にあたっては、「東京Ruby会議10だからこそ聴きたい」と思ったものを実行委員たちで選ばせていただきました。その結果、練達のプログラマーから新しいことに挑むフレッシュなエンジニアまで、エンジニアの多い東京地域を象徴するかのような多彩なセッション構成となりました。</p>
       </section>
     <% end %>
-    <% [:first_day, :second_day].each_with_index do |day, i| %>
-      <h2><%= t(day) %></h2>
-
-      <table class="timetable table table-condensed table-striped table-bordered">
-        <tr>
-          <th class="time"></th>
-          <th class="content"><%= t(:main_hall) %></th>
-          <th class="workshop"><%= t(:workshop) %></th>
-        </tr>
-        <% @sessions[i].each do |timetable_session| %>
-          <%= erb :_timetable_session, locals: { timetable_session: timetable_session } %>
-        <% end %>
-      </table>
-    <% end %>
     <% [:third_day].each_with_index do |day, i| %>
       <h2><%= t(day) %></h2>
 
@@ -36,7 +22,7 @@
           <th class="time"></th>
           <th class="content"><%= t(:main_hall) %></th>
         </tr>
-        <% @third_day_sessions[i].each do |timetable_session| %>
+        <% @sessions[i].each do |timetable_session| %>
           <%= erb :_3rd_day_timetable_session, locals: { timetable_session: timetable_session } %>
         <% end %>
       </table>
