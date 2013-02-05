@@ -37,6 +37,48 @@
         </ul>
       </div>
     </div>
+    <!-- modal 用 表示されません -->
+    <div id="owada" class="modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h2>大和田Ruby会議を開催します！</h2>
+      </div>
+      <div class="modal-body">
+        <h3>大和田Ruby会議 開催概要</h3>
+        <table class="table">
+          <tr>
+            <th width="100px">名前</th>
+            <td>大和田純</td>
+          </tr>
+          <tr>
+            <th>Twitter</th>
+            <td><a href="http://twitter.com/june29/">@june29</a></td>
+          </tr>
+          <tr>
+            <th>URL</th>
+            <td><a href="http://june29.jp/">http://june29.jp/</a></td>
+          </tr>
+          <tr>
+            <th>所属</th>
+            <td>Ruby札幌</td>
+          </tr>
+          <tr>
+            <th>発表タイトル</th>
+            <td>Ruby cruising Love</td>
+          </tr>
+          <tr>
+            <th>発表概要</th>
+            <td>Rubyistである私が、プログラマとしてどんなことを考えて過ごしているか。あるいは、Rubyistである私が、人間としてどんなことを考えて過ごしているかをお話します。</td>
+          </tr>
+        </table>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a class="btn" data-dismiss="modal" aria-hidden="true">閉じる</a>
+      </div>
+    </div>
+    <!-- /modal 用 表示されません -->
+  </section>
   </section>
 
   <section>
@@ -124,3 +166,8 @@
 </div>
 <!-- /body -->
 <!-- <script src="../public/js/jquery.js"></script> -->
+<script>
+$(function () {
+  $('#owada').modal()
+});
+</script>
