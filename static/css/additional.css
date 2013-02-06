@@ -87,3 +87,16 @@ body {
   padding: 0px;
   text-indent: 1em;
 }
+
+/* Owada */
+div#owada p {
+  padding: 5px 10px 15px 10px;
+}
+
+div#owada div.modal-body {
+  max-height: 450px;
+}
+
+div#owada table {
+  margin-bottom: 0px;
+}
