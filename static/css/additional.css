@@ -87,3 +87,16 @@ body {
   padding: 0px;
   text-indent: 1em;
 }
+
+/* Ohwada */
+div#ohwada p {
+  padding: 5px 10px 15px 10px;
+}
+
+div#ohwada div.modal-body {
+  max-height: 450px;
+}
+
+div#ohwada table {
+  margin-bottom: 0px;
+}
