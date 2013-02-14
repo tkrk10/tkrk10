@@ -100,3 +100,7 @@ div#ohwada div.modal-body {
 div#ohwada table {
   margin-bottom: 0px;
 }
+
+.navbar-fixed-top .container,  .navbar-fixed-bottom .container {
+  width: 1020px;
+}
